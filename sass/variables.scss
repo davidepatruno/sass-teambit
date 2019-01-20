@@ -1,1 +1,20 @@
+%color {
+  background-color: #30488F;
+}
+
+%flex {
+  display: flex;
+}
+%flex-jus-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+%side {
+  width: 50%;
+}
+
 $st_padding: 10px;
+
+$color-prova: #30488F;
+$prova: red;

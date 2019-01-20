@@ -1,9 +1,30 @@
-.wrapper-header {
+.header_wrapper {
+  @extend %flex;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-bottom: 2px solid black;
   padding: $st_padding;
-  h1 {
-    color: red;
+  .head_left, .head_right {
+    @extend %side;
+  }
+  .head_left {
+    img {
+      height: 60px;
+    }
+  }
+  .head_right {
+    height: 100%;
+    line-height: 60px;
+    ul {
+      @extend %flex-jus-around;
+      list-style: none;
+      li {
+        display: inline-block;
+        a {
+          text-decoration: none;
+          color: $prova;
+        }
+      }
+    }
   }
 }
